@@ -11,3 +11,4 @@
 ## Fonctionnalités
 - Recherche de films par titre
 - Affichage des résultats avec affichage des posters
+- Journalisation des recherches

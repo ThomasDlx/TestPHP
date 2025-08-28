@@ -5,6 +5,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $apiKey = $config['api_key'];
 
     if ($search !== '') {
+        $logFile = __DIR__ . '/../logs/search.log';
+        $logLine = date('Y-m-d H:i:s') . " - Recherche : " . $search . PHP_EOL;
+        file_put_contents($logFile, $logLine, FILE_APPEND);
+
         $url = "https://api.themoviedb.org/3/search/movie?api_key=$apiKey&language=fr-FR&query=" . urlencode($search);
         $response = file_get_contents($url);
 
