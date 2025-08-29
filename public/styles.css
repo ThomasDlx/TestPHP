@@ -1,3 +1,4 @@
+/* Navbar */
 .navbar-custom {
     background: #144b37;
     padding: 10px 0;
@@ -32,3 +33,13 @@
     text-decoration: underline;
 }
 
+/* Bouton de recherche personnalisé */
+.btn-search-custom {
+    background: #144b37 !important;
+    color: #e1be3c !important;
+    border: none;
+}
+.btn-search-custom:hover {
+    background: #0f3728 !important;
+    color: #e1be3c !important;
+}
