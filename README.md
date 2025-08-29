@@ -5,8 +5,8 @@
    ```bash
    git clone https://github.com/ThomasDlx/TestPHP.git
    ```
-
-2. Ajouter une clé API TMDb dans le fichier `config/config.php`.
+2. A la racine du projet : Créer un fichier de configuration `config/config.php`.
+3. Ajouter une clé API TMDb dans le fichier `config/config.php`.
 
 ## Fonctionnalités
 - Recherche de films par titre
