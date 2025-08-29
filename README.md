@@ -28,6 +28,9 @@
 - `config/config.php` : Fichier de configuration contenant la clé API.
 - `logs/search.log` : Fichier journalisant les recherches effectuées.
 - `.gitignore` : Fichier pour ignorer les dossiers `config` et `logs` dans le contrôle de version.
+- `public/styles.css` : Fichier de styles pour l'application.
+   - Contient les styles pour la barre de navigation.
+   - Bootstrap pour les cartes et le responsive.
 
 - `améliorations possibles` : 
   - Ajouter des tests unitaires pour le code PHP.
