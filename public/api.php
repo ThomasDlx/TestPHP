@@ -6,6 +6,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     if ($search !== '') {
         $logFile = __DIR__ . '/../logs/search.log';
+        if (!is_dir(__DIR__ . '/../logs')) {
+            mkdir(__DIR__ . '/../logs', 0777, true);
+        }
         $logLine = date('Y-m-d H:i:s') . " - Recherche : " . $search . PHP_EOL;
         file_put_contents($logFile, $logLine, FILE_APPEND);
 
